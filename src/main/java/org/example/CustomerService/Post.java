@@ -1,4 +1,4 @@
-package org.example;
+package org.example.CustomerService;
 
 public class Post {
     private int userId;
