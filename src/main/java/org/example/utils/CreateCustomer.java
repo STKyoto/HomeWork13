@@ -1,8 +1,19 @@
-package org.example.CustomerService;
+package org.example.utils;
+
+import org.example.dto.Address;
+import org.example.dto.Company;
+import org.example.dto.Customer;
+import org.example.dto.Geo;
+
+import java.util.Random;
 
 public class CreateCustomer {
-    public Customer createCustomer() {
+    public static Customer getCustomer() {
+        Random random = new Random();
+        int randomNumber = random.nextInt(10) + 1;
+
         Customer customer = new Customer();
+        customer.setId(randomNumber);
         customer.setName("John");
         customer.setUsername("John101");
         customer.setEmail("John101@gmail.com");

@@ -1,4 +1,4 @@
-package org.example.CustomerService;
+package org.example.dto;
 
 public class Task {
     int userId;
